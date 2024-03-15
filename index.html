@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario verificador</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Esse formulário só valida de acordo com o número que o usuário digitar</h1>
+        <h2>Por favor preencha os campos abaixo</h2>
+        <form id="form-valida">
+            <input type="number" id="numero-A" required placeholder="Número A" />
+            <input type="number" id="numero-B" required placeholder="Número B" />
+            <p class="error-message">
+                O número B precisa ser maior do que o número A
+            </p>
+            <button  id="btn-submeter" type="submit">submeter</button>
+        </form>
+        <p class="success-message"></p>
+    </div>
+<script src="./main.js"></script>
+</body>
+</html>
